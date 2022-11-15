@@ -8,8 +8,9 @@ endif()
 # we will use hunter as well to stay consistent. If not the use can supply it on configure to force using hunter.
 if(HUNTER_ENABLED)
   include("cmake/HunterGate.cmake")
-  huntergate(URL "https://github.com/cpp-pm/hunter/archive/v0.23.314.tar.gz" SHA1
-             "95c47c92f68edb091b5d6d18924baabe02a6962a")
+  HunterGate(
+    URL "https://github.com/cpp-pm/hunter/archive/v0.24.8.tar.gz"
+    SHA1 "ca7838dded9a1811b04ffd56175f629e0af82d3d")
   message(STATUS "jwt-cpp: using hunter for dependency resolution")
 endif()
 
